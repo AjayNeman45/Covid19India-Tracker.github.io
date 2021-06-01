@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>State-Wise Data</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Mate+SC&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="state.css">
+
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300&family=Ubuntu&display=swap" rel="stylesheet"> 
+</head>
+
+<body>
+    <nav class="navbar">
+        <a class="logo" href="index.html">COVID19<br> <small>INDIA</small></a>
+        <div class="menu">
+          <ul>
+            <li class="nav-item">
+              <a class="home" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="trackVaccine" href="trackVaccine.html">Track Vaccine</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+    <div class="container">
+        <div class="header">
+            <div class="left">
+                <h2 class="state-name"></h2>
+                <h5 class="last-updated">Last Updated on </h5>
+            </div>
+            <div class="right">
+                <h5 class="testedCnt">Tested
+                    <br><span></span>
+                </h5>
+            </div>
+        </div>
+
+        <div class="state_data">
+             <div class="stateTotal" id="activeCnt"><i class="fas fa-hospital-user"></i> Active <span> <br> </span></div>
+            <div class="stateTotal" id="confirmedCnt"><i class="fa fa-virus"> </i> Confirmed <span> <br> </span></div>
+            <div class="stateTotal" id="recoveredCnt"><i class="fa fa-virus-slash"></i> Recovered <span> <br> </span></div>
+            <div class="stateTotal" id="deathsCnt"><i class="fa fa-skull-crossbones"></i> Deceased <span> <br> </span>
+            </div>
+        </div>
+    </div> 
+    <!-- ////// container ended ////////-->
+    <div class="vaccinated">
+        <h5 class="vaccinatedCnt"><i class="fas fa-user-shield"></i>
+            <label></label> vaccine doses administered</h5>
+    </div>
+    <!-- javascript -->
+    <script type="text/javascript" src="state.js"></script>
+</body>
+
+</html>

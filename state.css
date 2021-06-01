@@ -1,0 +1,195 @@
+*{
+    padding:0;  margin: 0;  box-sizing: border-box;
+}
+.container{
+    margin-top:100px;
+}
+
+.header{
+   display: flex; 
+   justify-content:space-around;
+   align-items:center; 
+} 
+.state-name{
+  font-family: 'Mate SC', serif;
+  letter-spacing: 1px;
+  color:rgb(241, 0, 0);
+  background: rgb(255, 241, 241);
+  padding:5px 8px;
+  border-radius: 5px;
+}
+.last-updated{
+  margin-top:10px;
+  font-size: 80%;
+  font-family: 'Ubuntu', sans-serif;
+  color:rgb(143, 143, 143);
+}
+.right{
+  font-family:'Ubuntu', sans-serif;
+  color:rgb(186, 143, 255);
+  text-align: right;
+}
+.right span{
+  color:rgb(179, 68, 253);
+  font-weight:bolder;
+}
+.state_data{
+    display: flex;
+    align-items: center;
+    overflow-wrap: break-word;
+    justify-content:space-around;
+    margin-top:100px;
+    flex-wrap:wrap; 
+ 
+}
+.stateTotal{
+    font-size:95%;
+    letter-spacing: 1px;
+    text-align: center;
+    font-family: 'Ubuntu', sans-serif;
+    width:60vw;
+    height:16vh;
+    line-height: 7vh;
+}
+span{
+  font-size:1.5rem;;
+}
+.vaccinated{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top:50px;
+}
+.vaccinatedCnt{
+  background: rgba(219,85,129,.12549019607843137);
+  border-radius: 5px;
+  color: #db5581;
+  padding:7px 30px;
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 200;
+  letter-spacing: 1px;
+}
+#confirmedCnt{
+    background-color: rgb(255, 233, 233);
+    border-radius: 5px;
+    color:rgb(255, 0, 0);
+    transition: all .2s ease-in-out; 
+  }
+  #deathsCnt{
+    background:  rgb(243, 242, 242);
+    border-radius: 5px;
+    color:gray;
+    transition: all .2s ease-in-out;
+  }
+  #activeCnt{
+      background:rgb(227, 239, 250);
+      border-radius:5px;
+      color:rgb(14, 132, 241);
+      transition: all .2s ease-in-out;
+  }
+  #recoveredCnt{
+    border-radius: 5px;
+    color:rgb(1, 196, 1);
+    background-color: rgb(231, 253, 231);
+    transition: all .2s ease-in-out;
+  }
+  #confirmedCnt:hover{
+    background:rgb(252, 211, 211); 
+    transform: scale(1.1);
+  }
+  #activeCnt:hover{
+    background:rgb(200, 226, 248);
+    transform: scale(1.1);
+  }
+  #recoveredCnt:hover{
+    background-color: rgb(207, 252, 207);
+     transform: scale(1.1);
+  }
+  #deathsCnt:hover{
+    background: rgb(226, 226, 226);
+     transform: scale(1.1);
+  }
+  .navbar{
+    display: flex;
+    background-color: rgb(238, 238, 238);
+    top:0;
+    left:0;
+    width:100vw;
+    height:7vh;
+    position:fixed;
+    align-items: center;
+    justify-content: space-around;
+    letter-spacing: 0.8px;
+  }
+  
+  ul{
+    font-family: 'Noto Sans JP', sans-serif;
+    display: flex;
+    list-style: none;
+    text-decoration: none;
+    justify-content: flex-end;
+    padding-left:100px;
+  }
+  ul li{
+    padding:0 15px;
+  }
+  .logo{
+   font-family:'Courier New', Courier, monospace;
+   text-decoration: none;
+   font-size: 70%;
+   font-weight: bold;
+   color:rgb(48, 76, 202);
+ }
+ .logo small{
+   font-size: 170%;
+   font-family:'Courier New', Courier, monospace;
+ }
+  .home{
+     color:black;
+     cursor: pointer;
+     text-decoration: none;
+  }
+  .trackVaccine{
+    color:gray;
+    text-decoration: none;
+  } 
+  .trackVaccine:hover{
+    color:black;
+  }
+
+  @media (max-width:450px){
+      .right span{
+        font-size:100%;
+      }
+      .state-name{
+        font-size:120%;
+        width:auto;
+      }
+      .stateTotal{
+        margin-bottom: 20px;
+      }
+      .last-updated{
+        font-size:60%;
+      }
+      .vaccinatedCnt{
+        font-size: 70%;
+      }
+      .navbar{
+        font-size:80%;
+      }
+      .navbar a{
+        padding-left:10px;
+      }
+      ul li{
+        padding: 0 6px;
+      }
+  }
+  @media(min-width:650px){
+    .state_data{
+      flex-wrap: nowrap;
+    }
+    .stateTotal{
+      margin-left: 20px;
+      height:20vh;
+    }
+  }
