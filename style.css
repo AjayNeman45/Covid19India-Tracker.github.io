@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 *{
     margin: 0;
     padding: 0;
@@ -232,4 +233,240 @@
       margin-left:30px;
     }
   }
+=======
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+  }
+   
+  body{
+    padding: 0 20px;
+  }
+   
+  ::selection{
+    color: #fff;
+    background: #664AFF;
+  }
+.label{
+    text-align: center;
+    margin-top:-70px;
+    padding-bottom: 30px;
+    color:gray;
+    font-weight: 500;
+    letter-spacing: 1px;
+} 
+  .wrapper{
+    max-width: 450px;
+    margin: 150px auto;
+  }
+   
+  .wrapper .search-input{
+    background: #fff;
+    width: 100%;
+    position: relative;
+
+  } 
+  .search-input input{
+    font-family: 'Noto Sans JP', sans-serif;
+    color:gray;
+    height: 55px;
+    width: 100%;
+    outline:none;
+    border:none;
+    border-radius:5px;
+    padding: 0 60px 0 50px;
+    font-size: 18px;
+    box-shadow: 0px 1px 18px rgba(0,0,0,0.1);
+  }
+  
+  .search-input .autocom-box{
+    padding: 0;
+    opacity: 0;
+    pointer-events: none;
+    max-height: 280px;
+    overflow-y: auto;
+  }
+  .search-input .autocom-box li{
+      border-bottom: 1px solid rgb(243, 243, 243);
+      padding:18px 10px;
+  }
+  .search-input.active .autocom-box{
+    color:gray;
+    padding: 10px 8px;
+    opacity: 1;
+    pointer-events: auto;
+  }
+   
+  .autocom-box li{
+    list-style: none;
+    padding: 8px 12px;
+    display: none;
+    width: 100%;
+    cursor: default;
+    border-radius: 3px;
+  }
+   
+  .search-input.active .autocom-box li{
+    display: block;
+  }
+  .autocom-box li:hover{
+    background: #efefef;
+  }
+   
+  .search-input .icon{
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    height: 55px;
+    width: 55px;
+    text-align: center;
+    line-height: 55px;
+    font-size: 20px;
+    color: gray;
+  }
+  .newData{
+      display: flex;
+      align-items: center;
+      overflow-wrap: break-word;
+      justify-content: space-around; 
+      flex-wrap:wrap;
+  }
+  .new{
+    font-size:95%;
+    letter-spacing: 1px;
+    text-align: center;
+    font-family: 'Ubuntu', sans-serif;
+    width:60vw;
+    height:16vh;
+    line-height: 7vh;
+  }
+   span{
+     font-size:1.5rem;
+   }
+  #newConfirmed{
+    border-radius: 5px;
+    color:rgb(255, 0, 0);
+    background-color: rgb(255, 233, 233);
+    transition: all .2s ease-in-out;
+  }
+  #newDeaths{
+
+    border-radius: 5px;
+    color:gray;
+    background:  rgb(243, 242, 242);
+    transition: all .2s ease-in-out;
+  }
+  #newRecovered{
+    border-radius: 5px;
+    color:rgb(1, 196, 1);
+    background-color: rgb(231, 253, 231);
+    transition: all .2s ease-in-out;
+  }
+  #newConfirmed:hover{
+    transition: all 0.3s linear;
+    background:rgb(255, 221, 221);
+    transform: scale(1.2);
+  }
+  #newRecovered:hover{
+    transition:all 0.3s linear;
+    background-color: rgb(211, 253, 211);
+    transform: scale(1.2);
+  }
+  #newDeaths:hover{
+    transition: all 0.3s linear;
+    background: rgb(226, 226, 226);
+    transform: scale(1.2);
+  }
+  .LastUpdate{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    letter-spacing: 0.8px;
+    color:rgb(190, 190, 190);
+ }
+ .navbar{
+   display: flex;
+   background-color: rgb(238, 238, 238);
+   top:0;
+   left:0;
+   width:100vw;
+   height:7vh;
+   position:fixed;
+   align-items: center;
+   justify-content: space-around;
+   letter-spacing: 0.8px;
+ }
+ 
+ ul{
+   font-family: 'Noto Sans JP', sans-serif;
+   display: flex;
+   list-style: none;
+   text-decoration: none;
+   justify-content: flex-end;
+   padding-left:100px;
+ }
+ ul li{
+   padding:0 15px;
+ }
+ .logo{
+  font-family:'Courier New', Courier, monospace;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 70%;
+  color:rgb(48, 76, 202);
+}
+.logo small{
+  font-size: 170%;
+  font-family:'Courier New', Courier, monospace;
+}
+ .home{
+    color:black;
+    cursor: pointer;
+ }
+ .trackVaccine{
+   color:gray;
+   text-decoration: none;
+ } 
+ .trackVaccine:hover{
+   color:black;
+ }
+
+  @media(max-width:450px){
+    
+    .newData{
+      margin-top:-20px;
+    }
+    .new{
+      margin-bottom: 30px;
+    }
+     .LastUpdate{
+        font-size:75%;
+        margin-top: -40px;
+        padding-bottom:30px;
+    }
+    .label{
+      /* margin-top:-40px; */
+      font-size: 80%;
+    }
+    .navbar{
+      font-size:80%;
+    }
+    .navbar a{
+      padding-left:10px;
+    }
+    ul li{
+      padding: 0 6px;
+    }
+  }
+  @media(min-width:790px){
+    .newData{
+      flex-wrap:nowrap;
+    }
+    .new{
+      margin-left:30px;
+    }
+  }
+>>>>>>> e76d596c3f994d304c42b7e9fd725515a23683a7
   
