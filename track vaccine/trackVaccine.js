@@ -26,7 +26,7 @@ function getDate() {
 
 
 function showData() {
-    console.log("inside showData")
+    console.log(getDate())
     if(input.value.length != 6){
         alert("Enter Correct pin code");
         return;
